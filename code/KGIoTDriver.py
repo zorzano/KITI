@@ -4,6 +4,17 @@ class KGIoTDriver(object):
         # Empty method, to be fulfiiled by inheritors
         raise NotImplementedError()
 
-    def write(self, name):
-        # Empty method, to be fulfiiled by inheritors
+    def nukeBase(self):
+        raise NotImplementedError()
+
+    def readNode(self, type, attributes):
+        raise NotImplementedError()
+
+    def readNodeAndLinked(self, type, attributes):
+        raise NotImplementedError()
+
+    def mergeNode(self, type, attributes):
+        raise NotImplementedError()
+
+    def mergeLink(self, typeLink, attributesLink, typeA, attributesA, typeB, attributesB):
         raise NotImplementedError()

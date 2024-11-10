@@ -27,7 +27,6 @@ class KGIoTDriverNeo4j(KGIoTDriver):
             valueHolder+="} "
         else:
             valueHolder=""
-        print(valueHolder)
         return valueHolder
 
     def nukeBase(self):
@@ -35,14 +34,17 @@ class KGIoTDriverNeo4j(KGIoTDriver):
             txresult = session.write_transaction(self._nukeBase)
             return txresult
 
-    def write(self, type, name):
+    # Type is a string with the item name.
+    # attributes = [("a", 1), ("b", 2), ("c", 3)]
+    # returns an array of arrays of dictionaries. The [0][0] dictionary is composed by atr-val pairs
+    def readNode(self, type, attributes):
         with self._driver.session() as session:
-            txresult = session.write_transaction(self._write, type, name)
+            txresult = session.read_transaction(self._readNode, type, attributes)
             return txresult
 
-    def read(self, type, attributes):
+    def readNodeAndLinked(self, type, attributes):
         with self._driver.session() as session:
-            txresult = session.read_transaction(self._read, type, attributes)
+            txresult = session.read_transaction(self._readNodeAndLinked, type, attributes)
             return txresult
 
     # Type is a string with the item name.
@@ -72,17 +74,17 @@ class KGIoTDriverNeo4j(KGIoTDriver):
 
 
     @staticmethod
-    def _write(tx, type, name):
-        result = tx.run("MERGE (c1:"+type+" {name:$s2}) "
-                        "RETURN c1.name ",
-                        s1=type, s2=name)
-        return KGIoTDriverNeo4j._listifyIterable(result)
-
-    @staticmethod
-    def _read(tx, type, attributes):
+    def _readNode(tx, type, attributes):
         valueHolder=KGIoTDriverNeo4j._createValueHolder(attributes)
         result = tx.run("MATCH (c1:"+type+valueHolder+") "
                         "RETURN c1 ")
+        return KGIoTDriverNeo4j._listifyIterable(result)
+
+    @staticmethod
+    def _readNodeAndLinked(tx, type, attributes):
+        valueHolder=KGIoTDriverNeo4j._createValueHolder(attributes)
+        result = tx.run("MATCH (c1:"+type+valueHolder+")-[r]->(c2)"
+                        "RETURN c1, r, c2")
         return KGIoTDriverNeo4j._listifyIterable(result)
 
     @staticmethod

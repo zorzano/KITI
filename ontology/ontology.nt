@@ -1,0 +1,84 @@
+<http://www.semanticweb.org/rt01170/ontologies/2024/9/untitled-ontology-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Service> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Service> .
+# 
+# http://schema.org/knowsAbout
+<http://schema.org/knowsAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/worksFor
+<http://schema.org/worksFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/worksFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+<http://schema.org/worksFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
+# 
+# https://dbpedia.org/ontology/nationality
+<https://dbpedia.org/ontology/nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/ontology/nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Organization> .
+<https://dbpedia.org/ontology/nationality> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/Country> .
+# 
+# https://schema.org/manufacturer
+<https://schema.org/manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Product> .
+<https://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
+# 
+# https://schema.org/providesService
+<https://schema.org/providesService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/providesService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Product> .
+<https://schema.org/providesService> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Service> .
+# 
+# https://schema.org/seller
+<https://schema.org/seller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/seller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Organization> .
+<https://schema.org/seller> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
+# 
+# https://schema.org/serviceType
+<https://schema.org/serviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/serviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Service> .
+<https://schema.org/serviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# https://www.w3.org/TR/skos-reference/#inScheme
+<https://www.w3.org/TR/skos-reference/#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/TR/skos-reference/#inScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://www.w3.org/TR/skos-reference/#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/TR/skos-reference/#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://dbpedia.org/ontology/Country
+<https://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Product
+<https://schema.org/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Service
+<https://schema.org/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/TR/skos-reference/#ConceptScheme
+<https://www.w3.org/TR/skos-reference/#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
