@@ -1,0 +1,223 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "https://www.w3.org/TR/skos-reference/", "https://schema.org", "https://dbpedia.org/ontology", "http://purl.org/dc/terms", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://www.semanticweb.org/rt01170/ontologies/2024/9/untitled-ontology-2"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://dbpedia.org/ontology/Country",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://schema.org/Product",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://www.w3.org/TR/skos-reference/#ConceptScheme",
+    "baseIri" : "https://www.w3.org/TR/skos-reference/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://schema.org/Service",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://www.w3.org/TR/skos-reference/#inScheme",
+    "baseIri" : "https://www.w3.org/TR/skos-reference/",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "inScheme"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://schema.org/serviceType",
+    "baseIri" : "https://schema.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "serviceType"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://schema.org/seller",
+    "baseIri" : "https://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "seller"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://schema.org/providesService",
+    "baseIri" : "https://schema.org",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "providesService"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/nationality",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "nationality"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://schema.org/knowsAbout",
+    "baseIri" : "http://schema.org",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "knowsAbout"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://schema.org/manufacturer",
+    "baseIri" : "https://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "manufacturer"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://schema.org/worksFor",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "worksFor"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/dc/terms/isPartOf",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  } ]
+}
