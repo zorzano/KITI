@@ -137,7 +137,7 @@
       "IRI-based" : "inScheme"
     },
     "domain" : "2",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "3"
   }, {
     "iri" : "https://schema.org/serviceType",
@@ -147,7 +147,7 @@
       "IRI-based" : "serviceType"
     },
     "domain" : "7",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "6"
   }, {
     "iri" : "https://schema.org/seller",
@@ -157,7 +157,7 @@
       "IRI-based" : "seller"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "8"
   }, {
     "iri" : "https://schema.org/providesService",
@@ -167,7 +167,7 @@
       "IRI-based" : "providesService"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "9"
   }, {
     "iri" : "https://dbpedia.org/ontology/nationality",
@@ -177,7 +177,7 @@
       "IRI-based" : "nationality"
     },
     "domain" : "1",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "11"
   }, {
     "iri" : "http://schema.org/knowsAbout",
@@ -187,7 +187,7 @@
       "IRI-based" : "knowsAbout"
     },
     "domain" : "12",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "13"
   }, {
     "iri" : "https://schema.org/manufacturer",
@@ -197,7 +197,7 @@
       "IRI-based" : "manufacturer"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "14"
   }, {
     "iri" : "http://schema.org/worksFor",
@@ -207,7 +207,7 @@
       "IRI-based" : "worksFor"
     },
     "domain" : "5",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "15"
   }, {
     "iri" : "http://purl.org/dc/terms/isPartOf",
@@ -217,7 +217,7 @@
       "IRI-based" : "isPartOf"
     },
     "domain" : "7",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "16"
   } ]
 }
