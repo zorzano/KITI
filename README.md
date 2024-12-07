@@ -1,6 +1,6 @@
 # KITI
 
-A simple system to create and update a Knowledge Graph storing a description of Internet of Things technical ecosystem.
+A simple system to create and update a Knowledge Graph storing a description of Internet of Things technical ecosystem. 
 
 Content of this base:
 - /ontology Ontology of the KITI base
@@ -20,3 +20,8 @@ Content of this base:
   KGIoTDriver is the neutral prototype for database access.
   KGIoTDriverNeo4j.py is the implementation of the driver for Neo4j
   Test* are the files employed for unit testing
+
+Environment:
+- Ubuntu linux server
+- flask
+- Neo4j database
