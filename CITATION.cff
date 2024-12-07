@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Zorzano Mier
+    given-names: Francisco Javier
+    orcid: https://orcid.org/0000-0003-3111-8610
+title: "KITI. Knowledge Graph for the Internet of Things Ecosystem"
+version: 1.5
+identifiers:
+  - type: doi
+    value: TBD
+date-released: 2024-12-07
